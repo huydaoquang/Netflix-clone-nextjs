@@ -58,7 +58,6 @@ const Profiles = () => {
                 {user?.name}
               </div>
             </div>
-
           </div>
         </div>
       </div>
