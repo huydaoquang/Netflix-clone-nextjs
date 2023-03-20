@@ -1,20 +1,15 @@
-import React from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React from 'react'
 
 interface InputProps {
-  id: string;
-  onChange: any;
-  value: string;
-  label: string;
-  type?: string;
+  id: string
+  onChange: any
+  value: string
+  label: string
+  type?: string
 }
 
-const Input: React.FC<InputProps> = ({
-  id,
-  onChange,
-  value,
-  label,
-  type
-}) => {
+const Input: React.FC<InputProps> = ({ id, onChange, value, label, type }) => {
   return (
     <div className="relative">
       <input
@@ -57,7 +52,8 @@ const Input: React.FC<InputProps> = ({
       peer-focus:scale-75
       peer-focus:-translate-y-3
       "
-        htmlFor={id}>
+        htmlFor={id}
+      >
         {label}
       </label>
     </div>
